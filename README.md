@@ -1,2 +1,2 @@
-# practice
-Juat a repo for cloud native practices e.g. docker, kubernetes.
+# note
+It is just a repo for noting. Record what you think and knowledge/practices, etc. e.g. docker, kubernetes.
