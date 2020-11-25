@@ -20,3 +20,11 @@
   dpkg --print-foreign-architectures
   deb [arch=amd64,i386] http://archive.ubuntu.com/ubuntu xenial universe main restricted multiverse
 
+# 键盘重复速度、重复延迟:
+  居然不在keyboard里，而在Universal Access -> Typing -> Repeat Keys里。
+
+# 取消锁屏：
+	Privacy -> Automatic Screen Lock Off & Power -> Power Saving -> Blank screen Never
+	from：https://debug.fanzheng.org/post/ubuntu-18.04-settings.html
+
+
