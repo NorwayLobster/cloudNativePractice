@@ -10,3 +10,4 @@
 # note: 开vpn对aliyun的mirror的下载有很大影响
 sudo apt install gcc
 sudo apt install g++
+sudo apt install libboost-dev libboost-test-dev
