@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-27 07:58:35
- * @LastEditTime: 2020-12-01 19:52:43
+ * @LastEditTime: 2020-12-01 19:53:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /note/c++.md
@@ -19,7 +19,7 @@ C++ STL 的 vector 容器在 clear() 之后不会释放内存，需要 swap(empt
               原来是：std::async 返回std::future, 调用get方法,  way1: 直接调get(),  way2: 先保存起来，后面析构future的时候，在析构函数中调get（）方法， 其实此时是同步的。
               后来改成：std：：thread来模拟异步
 # 3. lambda表达式，传参时传引用？异步回调时有问题？？？？？？？ 应该没问题，lib库中都是传的引用。arms确认了，此处没问题。
-# 4.  coredump从container中导出的问题，及其实现原理:initContainer, empty_dir,....
+# 4.  coredump从container中导出的问题，及其实现原理: initContainer, empty_dir,....
 # 5. gdb a.out core: 学习
 # 5.1 gdb attach pid: 学习
 # 6. 回调函数，1.同步的进程，一直阻塞，需要curl然后才能继续,执行回调函数（同步回调）; 2. 异步回调，访问数据库，数据库的返回时异步，数据返回时才执行刚才访问数据库时注册的函数。
