@@ -2,7 +2,7 @@
  * @Author: ChengWang(cheng.wang.801@gmail.com)
  * @Date: 2020-12-02 13:50:22
  * @LastEditors: ChengWang
- * @LastEditTime: 2020-12-05 09:07:06
+ * @LastEditTime: 2020-12-31 21:33:13
  * @FilePath: /note/cmake.md
 -->
 # cmake 
@@ -23,3 +23,7 @@
 
 ## way2:
   set(CMAKE_CXX_STANDARD 11)
+  
+# 设置默认flag
+  set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -wall") //原来的flag上，加设 -g -wall
+  set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DEX2" CACHE STRING "Set C++ Compiler Flags" FORCE)//强制设置该flag为默认flag

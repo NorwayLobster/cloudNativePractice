@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-27 07:58:35
- * @LastEditTime: 2020-12-01 19:53:13
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-12-15 18:03:09
+ * @LastEditors: ChengWang
  * @Description: In User Settings Edit
  * @FilePath: /note/c++.md
 -->
@@ -27,3 +27,6 @@ C++ STL 的 vector 容器在 clear() 之后不会释放内存，需要 swap(empt
 # 8. 捕获列表中捕获了局部变量的引用，导致挂掉，(挂在lambda表达式回掉的时候，不是在使用变量的时候): 发生在shcommon库中，以为我们那个数据库异步返回的时间长，才发现了这个问题。
 # 9. 内存泄露问题：在debug时候在析构函数中加log但是没打印出来，说明有内存泄露问题，然后arms，shared_ptr引用计数问题多看了两眼，发现循环引用问题。
                 其实，mason.py -test会调用valgrind，会检测出来内存泄露问题，但是当时为什么没有检测出来？？？？？
+# 10. 
+        std::atoi, std::atol, std::atoll: char*
+        std::stoi, std::stol, std::stoll: string
